@@ -1,0 +1,50 @@
+﻿@model TestProject.Models.Timetable
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Timetable</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.User.Login)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.Login)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeFrom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeFrom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeTo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeTo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Discription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Discription)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TimetableID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
